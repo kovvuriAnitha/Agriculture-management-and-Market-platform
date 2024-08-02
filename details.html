@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Now</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+n7kVmID86Da1D1k4o6PmGU6Aj4gmvhEwwsJg1B" crossorigin="anonymous">
+
+  <style>
+    body{
+      background:linear-gradient(to right,yellowgreen,lightblue); 
+
+    }
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+    }
+    .form-check-label {
+      padding-left: 25px;
+      font-size: 18px;
+    }
+    .btn-primary {
+      background-color: #28a745;
+      border-color: #28a745;
+      font-weight: bold;
+    }
+    .btn-primary:hover {
+      background-color: #218838;
+      border-color: #218838;
+    }
+    .btn-primary:focus {
+      box-shadow: none;
+    }
+    .mb-4-custom{
+        margin-bottom: 20px;
+    }  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Place Your Order</h1>
+    <form id="orderForm">
+      <div class="mb-4-custom">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="mb-4-custom">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="mb-4-custom">
+        <label class="form-check-label">VEGETABLES</label><br>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Item 1" id="item1">
+          <label class="form-check-label" for="item1">Tomato</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Item 2" id="item2">
+          <label class="form-check-label" for="item2">Potato</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Item 3" id="item1">
+            <label class="form-check-label" for="item1">Onion</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Item 4" id="item1">
+            <label class="form-check-label" for="item1">greenchilli</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Item 5" id="item1">
+            <label class="form-check-label" for="item1">Brinjal</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Item 6" id="item1">
+            <label class="form-check-label" for="item1">cabbage</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Item 7" id="item1">
+            <label class="form-check-label" for="item1">Cauli flower</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Item 8" id="item1">
+            <label class="form-check-label" for="item1">peas</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Item 9" id="item1">
+            <label class="form-check-label" for="item1">capsiccum</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Item 10" id="item1">
+            <label class="form-check-label" for="item1">carrot</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Item 11" id="item1">
+            <label class="form-check-label" for="item1">cucumber</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Item 12" id="item1">
+            <label class="form-check-label" for="item1">Lady-finger</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Item 13" id="item1">
+            <label class="form-check-label" for="item1">mushroom</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Item 14" id="item1">
+            <label class="form-check-label" for="item1">Radish</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Item 15" id="item1">
+            <label class="form-check-label" for="item1">sweet potato</label>
+            <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Item 16" id="item1">
+          <label class="form-check-label" for="item1">Spinach</label>
+        </div>
+          </div>
+        <!-- Add more checkboxes for other items -->
+      </div>
+      <button type="submit" class="btn btn-primary">Order Now</button>
+    </form>
+  </div>
+
+  <!-- Bootstrap JS (optional, only if you need JS features) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-buD0MxCxE+9SnQQbSjKZ8jVjcBR8faNhRpfeZtmqkx4x6aLX4+i6gY1HksBkIaVT" crossorigin="anonymous"></script>
+
+  <script>
+    document.getElementById('orderForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      // Place order logic goes here
+      alert('Order placed successfully!');
+      window.location.href='home1.html';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    /> 
+    <style>
+      /* General styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image:url(login.jpg);
+  background-repeat: no-repeat;
+  background-color: #f1f1f1;
+ background-attachment: fixed;
+ background-size: 100% 100%; 
+ width: 100%; 
+ height: 100vh; 
+}
+
+#head {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+#main-holder {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Form styling */
+.form-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.a{
+  background-color: #f1f1f1;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color:white;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.text-center {
+  text-align: center;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="head">
+      <h1>Welcome to Our Agriculture Management And Market Platform..!</h1>
+    </div>
+    <main id="main-holder">
+      <h1>Login</h1>
+      <div class="form-container">
+        <form action="/login" method="post">
+          <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter Email"
+              name="email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Password"
+              name="password"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary" id="submit">
+            Submit
+          </button>
+        </form>
+      </div>
+      <div class="text-center">
+        <a href="register.html">Don't have an account? Register here...</a>
+      </div>
+    </main>
+  </body>
+</html>
